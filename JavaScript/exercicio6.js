@@ -11,32 +11,67 @@ function exercicio6() {
         opcao = parseInt(prompt("(1) somar (2) subtrair (3) multiplicar (4) dividir (5) sair: "))
 
         switch (opcao) {
+
             case 1:
-                parseInt(prompt("Informe dois números inteiros: "))
-                resultado = n1 + n2
-                alert("O valor da sua soma é:" + resultado);
+
+                alert("Informe dois números inteiros: ")
+                n1 = parseInt(prompt("Informe o primeiro número: "));
+                n2 = parseInt(prompt("Informe o segundo número: "));
+
+
+                if (isNaN(n1) || isNaN(n2)) {
+                    alert("Por favor, insira números válidos!");
+                } else {
+                    resultado = n1 + n2;
+                    alert("O valor da sua soma é: " + resultado);
+                }
                 break;
 
             case 2:
-                parseInt(prompt("Informe dois números inteiros: "))
-                resultado = n1 + n2
-                alert("Seu carro está proíbido de circular na terca-feira.");
+
+               alert("Informe dois números inteiros: ")
+                n1 = parseInt(prompt("Informe o primeiro número: "));
+                n2 = parseInt(prompt("Informe o segundo número: "));
+
+
+                if (isNaN(n1) || isNaN(n2)) {
+                    alert("Por favor, insira números válidos!");
+                } else {
+                    resultado = n1 - n2;
+                    alert("O valor da sua subtração é: " + resultado);
+                }
                 break;
 
             case 3:
-                parseInt(prompt("Informe dois números inteiros: "))
-                resultado = n1 + n2
-                alert("Seu carro está proíbido de circular na quarta-feira.");
+                alert("Informe dois números inteiros: ")
+                n1 = parseInt(prompt("Informe o primeiro número: "));
+                n2 = parseInt(prompt("Informe o segundo número: "));
+
+
+                if (isNaN(n1) || isNaN(n2)) {
+                    alert("Por favor, insira números válidos!");
+                } else {
+                    resultado = n1 * n2;
+                    alert("O valor da sua multiplicação é: " + resultado);
+                }
                 break;
 
             case 4:
-                parseInt(prompt("Informe dois números inteiros: "))
-                resultado = n1 + n2
-                alert("Seu carro está proíbido de circular na quinta-feira.");
+                alert("Informe dois números inteiros: ")
+                n1 = parseInt(prompt("Informe o primeiro número: "));
+                n2 = parseInt(prompt("Informe o segundo número: "));
+
+
+                if (isNaN(n1) || isNaN(n2)) {
+                    alert("Por favor, insira números válidos!");
+                } else {
+                    resultado = n1 / n2;
+                    alert("O valor da sua divisão é: " + resultado);
+                }
                 break;
 
             case 5:
-                prompt("Programa Encerrado!!")
+                alert("Programa Encerrado!!")
         }
     } while (opcao >= 1 && opcao <= 4)
 }
